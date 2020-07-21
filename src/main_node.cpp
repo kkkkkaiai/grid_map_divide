@@ -1,6 +1,17 @@
 #include "readPcd.h"
 
-int main(){
+#define test_1
+
+void test(){
+#ifdef test_1
     readPcd rP;
-    cout << rP.get_pcd_path()  << endl;
+#endif
+
+
+}
+
+int main(){
+
+    test();
+
 }
