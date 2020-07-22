@@ -10,10 +10,6 @@ void test(){
 #endif
 }
 
-void gridMap(){
-
-}
-
 int main(){
 
     test();
