@@ -1,3 +1,0 @@
-/home/znfs/test_ws/GridMapDivide/build/CMakeFiles/rebuild_cache.dir
-/home/znfs/test_ws/GridMapDivide/build/CMakeFiles/GridMapDivide.dir
-/home/znfs/test_ws/GridMapDivide/build/CMakeFiles/edit_cache.dir

@@ -1,1 +1,2 @@
 pcd_path: /home/znfs/test_ws/GridMapDivide/map/finalCloud.pcd
+grid_size: 30

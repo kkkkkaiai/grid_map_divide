@@ -5,8 +5,13 @@
 void test(){
 #ifdef test_1
     readPcd rP;
+    rP.print_test();
 #endif
 
+
+}
+
+void gridMap(){
 
 }
 

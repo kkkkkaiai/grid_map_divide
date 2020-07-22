@@ -1,6 +1,8 @@
 project(GridMapDivide)
 cmake_minimum_required(VERSION 3.10)
 
+add_definitions(-w)
+
 find_package(yaml-cpp)
 find_package(PCL 1.7 REQUIRED)
 include_directories(
