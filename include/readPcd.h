@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include <fstream>
 #include <pcl/io/pcd_io.h>
 #include <pcl/io/ply_io.h>
@@ -20,7 +21,7 @@ static string config_name = {"../param/config.yaml"};
 static const YAML::Node& node = YAML::LoadFile(config_name);
 
 struct GridConfig{
-    int all_size;
+    int grid_size;
     int net_num;
     double min_x = 100000000;
     double max_x = -100000000;
@@ -46,15 +47,27 @@ class readPcd{
 public:
     readPcd();
     void loadConfig();
-    int getBound();
     string get_pcd_path();
-    void print_test();
+    string get_scv_name();
+    string get_scv_path();
+    int getBound();           // obtain the bound according to pcd file
+    int group();              // divide into group
+    void organizeCloud();
+    void writeCloud();
+    void run();
+
+
+    void print_debug();
     
 private:
     string pcd_path;
+    string write_path;
+    string scv_path;
+    string scv_name;
     pcl::PointCloud<pcl::PointXYZI> source_cloud;
     bool read_success = false;
     GridConfig grid_;
+    vector<Grid> grid_sum;
 };
 
 

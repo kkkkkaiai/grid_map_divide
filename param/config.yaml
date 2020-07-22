@@ -1,2 +1,5 @@
-pcd_path: /home/znfs/test_ws/GridMapDivide/map/finalCloud.pcd
+pcd_path: ../map/finalCloud1.pcd
 grid_size: 30
+write_path: ../map/maps/
+scv_path: ../map/maps/
+scv_name: files_name.csv

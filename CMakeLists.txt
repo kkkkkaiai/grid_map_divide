@@ -13,7 +13,9 @@ include_directories(
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-aux_source_directory(./src DIR_SRCS)
 
-add_executable(GridMapDivide  ${DIR_SRCS})
+add_executable(GridMapDivide  src/main_node.cpp src/readPcd.cpp)
 target_link_libraries(GridMapDivide yaml-cpp ${PCL_LIBRARIES})
+
+add_executable(Visualize  src/visualize_node.cpp src/visualize.cpp src/readPcd.cpp)
+target_link_libraries(Visualize yaml-cpp ${PCL_LIBRARIES})
